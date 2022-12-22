@@ -1,8 +1,12 @@
 package requestBuilder;
 
+import com.github.dzieciou.testing.curl.CurlLoggingRestAssuredConfigFactory;
 import helpers.BaseApi;
+import io.restassured.config.RestAssuredConfig;
 import io.restassured.response.Response;
 import properties.getProperties;
+
+import static io.restassured.RestAssured.given;
 
 
 public class GetTimeStamp extends BaseApi implements APIInterface {
@@ -16,8 +20,6 @@ public class GetTimeStamp extends BaseApi implements APIInterface {
             addQueryParam("cached", "");
         }
         addQueryParam("s",timeStamp);
-
-
     }
 
 
@@ -38,7 +40,11 @@ public class GetTimeStamp extends BaseApi implements APIInterface {
     }
 
     @Override
-    public void createRequestJsonAndExecute() {
+    public void createRequestJsonAndExecute(){
+
+    }
+
+    public void createRequestJsonAndExecute(String timeStamp) {
         response = execute("GET");
     }
 }

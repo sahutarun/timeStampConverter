@@ -1,7 +1,7 @@
 <suite name="TestSuite" verbose="1" >
     <test name="UnixConverterTests">
-        <classes>
-            <class name="testSuite.TimeStampConvertTest" />
-        </classes>
+        <packages>
+            <package name="testSuite.*"/>
+        </packages>
     </test>
 </suite>

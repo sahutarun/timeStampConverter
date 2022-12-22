@@ -18,7 +18,6 @@ public class Utils {
 
     public static long convertToEpoc(Timestamp timestamp) throws ParseException{
         String epoc;
-
         Date date = timeFormat.parse(String.valueOf(timestamp));
         long epoch = date.getTime();
 

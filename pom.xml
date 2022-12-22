@@ -65,7 +65,7 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>4.3.1</version>
+            <version>5.3.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -73,6 +73,16 @@
             <artifactId>json-schema-validator</artifactId>
             <version>3.0.6</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.dzieciou.testing</groupId>
+            <artifactId>curl-logger</artifactId>
+            <version>1.0.4</version>
         </dependency>
         <dependency>
             <groupId>commons-lang</groupId>
